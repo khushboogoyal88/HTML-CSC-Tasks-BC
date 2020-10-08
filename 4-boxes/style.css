@@ -1,0 +1,121 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
+  color: #808000;
+  padding: 15px;
+}
+img {
+  width: 500px;
+  height: 300px;
+}
+
+h1 {
+  background-color: lightyellow;
+  margin-bottom: 10px;
+}
+
+header ul li a {
+  color: #0000ff;
+  background-color: white;
+  font-size: 1.25em;
+  margin-top: 10px;
+}
+
+main {
+  color: blue;
+  background-color: white;
+  border: 3px solid blue;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+
+}
+article,
+aside {
+  color: blue;
+  background-color: white;
+  text size: 16 px;
+  padding: 5px;
+  justify-content: center;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+ margin-top: 25px;
+}
+
+th{
+  background-color: #ff9300;
+  padding-bottom: 20px ;
+
+}
+
+td, th {
+  border: 1.5px solid; white;
+  padding-bottom: 20px ;
+  padding: 10px 10px;
+  color: black;
+}
+
+
+ .darkpink{
+  background-color: #ffdcca;
+}
+
+tr:nth-child(3){
+  background-color: #feede7
+}
+
+#box{
+
+  background-image: url("https://images.unsplash.com/photo-1514900065139-77d4e95afc1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+ background-position: cover;
+ color: black;
+  
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+  background-color:red;
+  display: inline-block;
+}
+
+.box1{
+  background-color: pink;
+  border: 5px dotted blue
+}
+.box2{
+  background-color: green;
+  border-radius: 10px;
+  border: 3px dashed yellow
+}
+.box3{
+  background-color: yellow;
+  border-top: 25px solid firebrick;
+  
+  border-bottom:25px solid palevioletred;
+  border-left: 25px solid hotpink;
+  border-right: 25px solid red;
+}
+
+.box4{
+  background-color: orange;
+  border: 3px solid black;
+}
+.box5{
+  background-color: black;
+  border-radius: 50%;
+  border: 3px dashed red;
+}
