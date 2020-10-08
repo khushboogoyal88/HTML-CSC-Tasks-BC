@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+header ul {
+}
+
+header ul li {
+  display: inline-block;
+  padding: 10px;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#hero-banner {
+  background: url(http://source.unsplash.com/O453M2Liufs) no-repeat fixed center
+    center/cover;
+  height: 70vh;
+  position: relative;
+}
+#hero {
+  background-color: rgba(255, 165, 0, 0.6);
+  height: 270px;
+  width: 500px;
+  color: white;
+  position: absolute;
+  top: 150px;
+  border-radius: 2px;
+}
+
+#hero h2 {
+  font-size: 42px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#hero p {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  line-height: 1.25;
+}
+
+#hero a {
+  display: inline-block;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#about {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#about .wrapper {
+  width: 45%;
+  float: left;
+  line-height: 1.25;
+  font-size: 18px;
+}
+
+#about img {
+  width: 30%;
+  float: right;
+  width: 500px;
+  height: 300px;
+  border-radius: 2px;
+}
+
+#about h3 {
+  font-size: 26px;
+  margin: 20px;
+  margin-left: 0px;
+}
+
+.clearfix {
+  clear: both;
+}
+/* footer */
+footer {
+  background-color: #333;
+  color: white;
+  height: 120vh;
+  padding-top: 8vh;
+}
+
+footer form {
+  float: left;
+  width: 40%;
+}
+
+footer .right {
+  float: right;
+  width: 40%;
+}
+footer .right p {
+  margin-top: 20px;
+}
+
+footer form label {
+  width: 150px;
+  display: inline-block;
+}
+
+footer form .form-group {
+  margin: 16px 0;
+}
+
+footer form h3 {
+  border-top: 1px dotted grey;
+  padding-top: 24px;
+  margin-top: 24px;
+}
+
+footer form input {
+  width: 56%;
+}
+
+footer form input[type="radio"],
+footer form input[type="checkbox"] {
+  margin: 0 20px;
+  width: auto;
+}
+
+footer form textarea {
+  margin-left: 20px;
+  display: block;
+  width: 95%;
+}
+
+footer form button {
+  background-color: orange;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  margin: 24px 24px 24px 20px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
