@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+}
+.main {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90px;
+}
+
+.title {
+  border: 1px solid white;
+  background-color: yellow;
+  width: 70%;
+  height: 100%;
+}
+.nav {
+  background-color: white;
+  width: 30%;
+  height: 100%;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+.navelement {
+  display: block;
+  height: 100%;
+  width: 33.3%;
+  background-color: pink;
+  border: 1px solid white;
+  padding: 50px;
+}
+.hero {
+  flex-direction: row;
+  height: 80vh;
+}
+
+.article {
+  width: 75%;
+  background-color: green;
+  flex-direction: column;
+}
+
+.postTitle {
+  width: 100%;
+  height: 10%;
+  background-color: red;
+  border: 1px solid white;
+}
+.postTitle2 {
+  width: 100%;
+  height: 90%;
+  background-color: yellow;
+  flex-direction: row;
+}
+.postMeta {
+  width: 20%;
+  background-color: green;
+  border: 1px solid white;
+}
+.mainContent {
+  width: 80%;
+  background-color: grey;
+  flex-direction: column;
+}
+.mainContent1 {
+  height: 40%;
+  background-color: grey;
+  border: 1px solid white;
+}
+.mainContent2 {
+  height: 60%;
+  background-color: yellow;
+  border: 1px solid white;
+}
+.aside {
+  width: 25%;
+  background-color: orange;
+  flex-direction: column;
+}
+.asideElement {
+  display: inline-block;
+  width: 100%;
+  height: 33.3%;
+  border: 1px solid white;
+}
+.sidebar {
+  background-color: orange;
+}
+
+.ads {
+  background-color: green;
+}
+
+.others {
+  background-color: pink;
+}
+footer {
+  background-color: crimson;
+  height: 20vh;
+  border: 1px solid white;
+}
