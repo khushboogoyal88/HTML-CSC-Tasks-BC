@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-1 {
+  padding: 1rem 0;
+}
+.p-1 {
+  padding: 2rem;
+}
+.my-1 {
+  margin: 1rem 0;
+}
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  padding: 1rem;
+  width: 100%;
+
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+#logo a {
+  font-size: 3rem;
+  color: coral;
+}
+#main-nav ul {
+  display: flex;
+  justify-content: space-between;
+  transition: 0.5s ease-in;
+}
+#main-nav ul li {
+  color: #fff;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+  font-size: 1.25rem;
+  border-bottom: 2px transparent solid;
+}
+#main-nav > .nav-items > ul > li > a {
+  color: #fff;
+}
+#main-nav ul li ul {
+  display: none;
+}
+#main-nav > .nav-items > ul > li:hover {
+  border-color: coral;
+  cursor: pointer;
+}
+#main-nav .nav-items ul li:hover ul {
+  display: block;
+  position: absolute;
+  right: 0;
+
+  margin-top: 1rem;
+  width: 200px;
+}
+#main-nav .nav-items ul li:hover ul li {
+  display: block;
+  background: #e7e7e7;
+}
+#main-nav .nav-items ul li:hover ul li a {
+  color: #333;
+}
+#main-nav .nav-items ul li:hover ul li:hover {
+  background: #e0e0e0;
+  color: inherit;
+}
+#hero {
+  background: url(https://cdn.pixabay.com/photo/2018/01/24/10/11/time-3103599_1280.jpg)
+    no-repeat fixed center center/cover;
+  height: 100vh;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#hero h1 {
+  font-size: 5rem;
+  color: #eee;
+}
+#hero h1 span {
+  color: coral;
+}
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#hero-banner * {
+  z-index: 1;
+}
+
+#work .container {
+  padding-bottom: 2rem;
+}
+#work .cardholder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.card {
+  background: #fff;
+  padding: 1rem;
+}
+#experience {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#skills .cardholder {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+  padding: 2rem;
+}
+
+#skills .cardholder .card div {
+  background-color: #333;
+  height: 10px;
+  width: 80%;
+  /* margin: 0 auto; */
+}
+#skills .cardholder .card {
+  text-align: center;
+  height: 250px;
+  padding: 50px;
+}
+#skills .card .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+}
+#skills .card .progress div {
+  height: 100%;
+  color: #fff;
+  background: coral;
+}
+
+.skills-content {
+  margin: 4rem;
+
+  width: 100%;
+}
+#skills {
+  background: url(https://cdn.pixabay.com/photo/2018/01/24/10/11/time-3103599_1280.jpg)
+    no-repeat fixed center center/cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#skills .cardholder .card:nth-child(odd) {
+  background: #ddd;
+}
+/* Footer */
+footer {
+  background-color: #333;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+footer p {
+  margin-top: 48px;
+  font-size: 12px;
+}
+
+footer form {
+  margin: 0 auto;
+  width: 60%;
+  text-align: left;
+}
+
+footer form .form-group {
+  margin: 32px 0;
+}
+
+footer form .form-group label {
+  width: 200px;
+  display: inline-block;
+  text-align: left;
+}
+
+footer form .form-group input,
+footer form .form-group textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 60%;
+  font-size: 1rem;
+}
+
+footer form .form-group textarea {
+  min-height: 100px;
+}
+
+footer form button {
+  background-color: orange;
+  border-radius: 5px;
+  border: none;
+  padding: 16px 32px;
+  color: #fff;
+  margin-left: 205px;
+  font-size: inherit;
+}
+
+.image-gallery {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 8vw);
+  grid-gap: 10px;
+  padding-top: 10vh;
+}
+.image-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.image-item2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.image-item3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+.image-item6 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+.image-item5 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+.image-item4 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.image-item7 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.image-item8 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.image-item9 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+@media (max-width: 899px) {
+  main #experience {
+    display: block;
+  }
+  main #experience img {
+    width: 100%;
+  }
+
+  #skills .cardholder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer form {
+    width: 80%;
+    text-align: left;
+  }
+  footer form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  footer form .form-group input,
+  footer form .form-group textarea {
+    width: 100%;
+  }
+  footer form button {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 576px) {
+  header {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+  header nav ul li a {
+    padding: 0.5rem;
+  }
+  .container,
+  main #experience .content {
+    padding: 1rem;
+  }
+  main #hero-banner h1 {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  #work .cardholder {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #skills .cardholder {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main #skills img {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  main #work,
+  main #skills {
+    padding: 0;
+  }
+}
