@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>Hamburger Menu</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logo">
+        <h1>Logo</h1>
+      </div>
+      <a onclick="mobileMenu()" href="#" class="icon"
+        ><i class="fas fa-bars fa-2x"></i
+      ></a>
+      <ul id="menu">
+        <li class="menu-item"><a href="#">Home</a></li>
+        <li class="menu-item"><a href="#">About</a></li>
+        <li class="menu-item"><a href="#">Contact</a></li>
+        <li class="menu-item">
+          <a href="#">Services</a>
+          <ul>
+            <li><a href="#section1">Some Link 1</a></li>
+            <li><a href="#section2">Some Link 2</a></li>
+            <li><a href="#section3">Some Link 3</a></li>
+            <li><a href="#section4">Some Link 4</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="section py-5" id="section1"><p>This is section 1</p></div>
+    <div class="section" id="section2"><p>This is section 2</p></div>
+    <div class="section" id="section3"><p>This is section 3</p></div>
+    <div class="section" id="section4"><p>This is section 4</p></div>
+    <script src="app.js"></script>
+  </body>
+</html>
