@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Caslon Display", serif;
+}
+
+.container {
+  max-width: 1200px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 50px;
+  border-radius: 2px;
+  min-height: 25%;
+  margin: 0 auto;
+}
+h1,
+h2 {
+  margin-bottom: 25px;
+}
+
+/* Header area*/
+
+header {
+  background-color: #333;
+  padding: 10px;
+  text-align: right;
+}
+
+header div#logo a {
+  font-size: 32px;
+  float: left;
+  color: orange;
+  text-decoration: none;
+  margin-top: 15px;
+  padding: 10px;
+  margin-left: 15px;
+}
+
+/* Main Nav */
+header nav ul {
+  list-style: none;
+  padding: 20px;
+}
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  float: right;
+  font-size: 18px;
+}
+/* Hero banner */
+
+main #hero-banner {
+  background: url(https://cdn.pixabay.com/photo/2018/01/24/10/11/time-3103599_1280.jpg)
+    no-repeat fixed center center/cover;
+  height: 75vh;
+  padding: 50px;
+  position: relative;
+}
+
+main #hero-banner h1 {
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main #hero-banner span {
+  color: orange;
+}
+
+/* Past Section */
+
+main #past,
+main #future {
+  background-color: #f4f4f4;
+  padding: 50px;
+  width: 100%;
+}
+
+main #past img,
+main #future img {
+  width: 300px;
+  float: left;
+  margin-right: 50px;
+  border-radius: 5px;
+}
+main #past p,
+main #future p {
+  line-height: 2;
+}
+
+main #future {
+  background: url(https://cdn.pixabay.com/photo/2018/05/04/17/16/eye-3374462_1280.jpg)
+    no-repeat fixed center center/cover;
+}
+
+/* Present section */
+
+main #present {
+  display: flex;
+  flex-direction: row;
+}
+main #present img {
+  max-height: 50vh;
+  flex: 1;
+}
+
+main #present .content {
+  padding: 50px;
+  max-height: 50vh;
+  flex: 1;
+}
+
+main #present .content p {
+  line-height: 2;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+footer p {
+  margin-top: 48px;
+  font-size: 12px;
+}
+
+footer form {
+  margin: 0 auto;
+  width: 60%;
+  text-align: left;
+}
+
+footer form .form-group {
+  margin: 32px 0;
+}
+
+footer form .form-group label {
+  width: 200px;
+  display: inline-block;
+  text-align: left;
+}
+
+footer form .form-group input,
+footer form .form-group textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 60%;
+  font-size: 1rem;
+}
+
+footer form .form-group textarea {
+  min-height: 100px;
+}
+
+footer form button {
+  background-color: coral;
+  border-radius: 5px;
+  border: none;
+  padding: 16px 32px;
+  color: #fff;
+  margin-left: 205px;
+  font-size: inherit;
+}
+
+@media (max-width: 899px) {
+  main #present {
+    display: block;
+  }
+  main #present img {
+    width: 100%;
+  }
+  footer form,
+  footer > button {
+    width: 80%;
+    text-align: left;
+  }
+  footer form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  footer form input,
+  footer form textarea {
+    width: 100%;
+  }
+  footer form button {
+    width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  header nav ul li a {
+    padding: 0.5rem;
+  }
+  .container,
+  main #present .content {
+    padding: 1rem;
+  }
+  main #hero-banner h1 {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  main #past .past_boxes {
+    flex-direction: column;
+  }
+  main #past .box {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  main #future img {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  main #past,
+  main #future {
+    padding: 0;
+  }
+  main #future {
+    margin-top: 100px;
+  }
+  footer form button {
+    margin-left: 0;
+  }
+}
