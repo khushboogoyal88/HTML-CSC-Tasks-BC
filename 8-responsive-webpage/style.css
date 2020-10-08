@@ -1,0 +1,46 @@
+body {
+  background-color: yellow;
+}
+h1 {
+  color: orange;
+  display: block;
+}
+
+h1::after {
+  content: "It's a small screen";
+}
+
+@media (min-width: 576px) {
+  body {
+    background-color: blue;
+  }
+  h1 {
+    color: green;
+  }
+  h1::after {
+    content: "It's a medium screen";
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background-color: green;
+  }
+  h1 {
+    color: blue;
+  }
+  h1::after {
+    content: "It's a large screen";
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-color: red;
+  }
+  h1 {
+    color: yellow;
+  }
+  h1::after {
+    content: "It's a extra large screen";
+  }
+}
