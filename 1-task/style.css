@@ -1,0 +1,16 @@
+body {
+  background-color: pink;
+}
+h1 {
+  color: #ffffff;
+  text-align: center;
+}
+h2 {
+  color: lightblue;
+}
+h3 {
+  border: 2px dotted black;
+}
+p {
+  font-size: 20px;
+}
