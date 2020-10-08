@@ -1,0 +1,41 @@
+:root{
+    --primary-color: coral;
+    --secondary-color: steelblue;
+    --dark-color: #333;
+    --light-color: lightpink;
+}
+
+body{
+    background-color: var(--seconday-color-color);
+    color: var(--dark-color);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+}
+.item{
+    height: 150px;
+    padding: 1rem;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease-in;
+}
+
+
+.item:nth-child(2n){
+    background-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--dark-color);
+}
+
+.item:nth-child(odd){
+    background-color: var(--light-color);
+}
+.item:hover {
+    background-color: red;
+    border-radius: 50%;
+    scale: 1.1;
+}
